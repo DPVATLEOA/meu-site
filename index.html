@@ -235,7 +235,7 @@ body {
     font-weight: bold; /* Deixa o texto em negrito */
     text-align: center; /* Centraliza o texto horizontalmente */
     margin-bottom: 20px; /* Adiciona espaçamento entre o texto e o vídeo */
-    color: #000; /* Define a cor do texto */
+    color: #6b4f28; /* Define a cor do texto */
 }
 @media (max-width: 768px) {
     .video-title {
@@ -249,16 +249,16 @@ body {
             padding: 10px;
             margin-top: 20px;
         }
-        #sobre {
-            text-align: justify;
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            color: #333;
-            line-height: 1.8;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            margin-top: 20px;
+
+.sobre-container {
+    max-width: 1500px; /* Limita a largura máxima da seção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra opcional */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #fff
+
         }
         #sobre h2 {
             text-align: center;
@@ -281,12 +281,13 @@ body {
             padding: 40px 20px;
             background-color: #ffd600;
             margin-top: 20px;
+            font-size: 36x;!Important
         }
         #servicos h2 {
             font-family: 'Montserrat', sans-serif;
             color: #6b4f28;
-            font-size: 24x;
-            margin-bottom: 20px;
+            font-size: 36x; !Important
+            margin-bottom: 40px;
         }
         #servicos p {
             font-size: 18px;
@@ -476,7 +477,7 @@ body {
     font-weight: bold; /* Torna a escrita mais destacada */
 }
 .depoimentos {
-  padding: 60px 60px;
+  padding: 40px 40px;
   background-color: #fff; /* Fundo leve para destacar as caixas */
   text-align: center;
   border-radius: 20px; /* Bordas arredondadas na caixa principal */
@@ -494,20 +495,20 @@ body {
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .depoimentos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
-  gap: 20px;
-  margin-top: 30px; 
+  gap: 10px;
+  margin-top:20px; 
 }
 
 .depoimento {
   background-color: #fff;
   border: 2px solid #d4af37; /* Bordas douradas */
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -702,8 +703,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </iframe>
     </div>
 </div>
-    <div class="content">
-        <section id="sobre">
+          <section id="sobre">
+        <div class="sobre-container">
     <h2>Leoa do Norte: Compromisso com a Justiça e a Proteção</h2>
     <p>A Leoa do Norte é uma empresa especializada em garantir o acesso à justiça e ao seguro, oferecendo soluções rápidas e eficientes para clientes que sofreram acidentes de trânsito ou que necessitam de assistência jurídica e previdenciária. Com uma equipe dedicada, nossa missão é proporcionar tranquilidade e segurança a cada cliente, ajudando-os a obter a indenização que têm direito de forma simples e ágil.</p>
     <p>Nosso compromisso é com a transparência, o acolhimento e a eficácia, tornando o processo descomplicado e focado nos melhores resultados. A Leoa do Norte acredita na importância de cada caso e trata cada cliente com a atenção que ele merece, assegurando que seus direitos sejam plenamente respeitados.</p>
