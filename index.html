@@ -208,23 +208,40 @@ body {
     margin-bottom: 20px; /* Reduz o espaçamento inferior */
 }
 
-        .video-container {
+.video {
+    text-align: center; /* Centraliza o título */
+    margin: 20px auto; /* Adiciona espaçamento ao redor */
+}
+
+.video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
+    padding-bottom: 30%; /* Proporção 16:9 */
     height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
+    max-width: 900px; /* Define uma largura máxima para o vídeo */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    background-color: #000; /* Fundo preto opcional */
 }
 
 .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* O vídeo ocupa toda a largura do contêiner */
+    height: 100%; /* O vídeo ocupa toda a altura do contêiner */
+    border: none;
 }
-
+.video-title {
+    font-size: 36px; /* Aumenta o tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona espaçamento entre o texto e o vídeo */
+    color: #000; /* Define a cor do texto */
+}
+@media (max-width: 768px) {
+    .video-title {
+        font-size: 20px; /* Texto um pouco menor em telas pequenas */
+    }
+}
         }
         footer {
             background-color: #fcd34d;
@@ -673,17 +690,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
 <div class="video">
-    <h3>Assista nosso vídeo explicativo</h3>
-    <iframe 
-        width="1080" 
-        height="480" 
-        src="https://www.youtube.com/embed/GqDKQIFZ3QM?si=9j5aFahu8DhtvYvQ" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-    </iframe>
+    <h3 class="video-title">Assista nosso vídeo explicativo</h3>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/GqDKQIFZ3QM?si=9j5aFahu8DhtvYvQ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </div>
     <div class="content">
         <section id="sobre">
